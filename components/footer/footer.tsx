@@ -2,7 +2,9 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className='flex mt-auto items-center w-full p-6 z-50'>
+      <div>The WritingHub</div>
+    </div>
   )
 }
 
