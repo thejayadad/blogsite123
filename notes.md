@@ -2,6 +2,7 @@
 - package.json
 - page.tsx and global
 - update layout and folder structure
+- add daisyui
  
 
 
@@ -18,6 +19,17 @@
 - setup blob store
 - npm i @vercel/blob
 - npm i clsx zod
+
+## CREATE THE LANDING
+- setup the layout
+- build the header & footer design
+- add the auth component
+- add auth modal
+- setup the modal into a component
+- update the text
+- add the server action to login
+- then the loginbtn
+ 
 
 
 ## SIDEBAR

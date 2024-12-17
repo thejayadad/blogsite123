@@ -1,8 +1,9 @@
 import React from 'react'
 import {FiArrowRightCircle} from "react-icons/fi"
+import AuthModal from './auth-modal'
 const Heading = () => {
   return (
-    <div className='max-w-screen-xl space-y-4'>
+    <div className='max-w-screen-xl flex flex-col justify-center h-full items-center w-full mx-auto space-y-4'>
         <h1 className='text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900'>Share your thoughts, ideas, & network <span className='underline'>
         The WritingHub
         </span>
@@ -13,10 +14,12 @@ const Heading = () => {
               to write, share, and network with people.
         </h3>
         <div  className='flex items-center justify-center w-full'>
-        <button className='flex items-center'>
-          Enter
-          <FiArrowRightCircle className='h-4 w-w ml-2' />
-        </button>
+        <div className='flex items-center'>
+          <AuthModal
+          title='Enter'
+          style='neutral'
+          />
+        </div>
         </div>
     </div>
   )

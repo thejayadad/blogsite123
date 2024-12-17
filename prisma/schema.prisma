@@ -46,7 +46,11 @@ model Website {
 model Post {
   id          String   @id @default(cuid())
   title       String
-  description String
+  description String?
+  coverImage  String?
+  postImage   String?
+  icon        String?
+  isPublished Boolean @default(false)
   userEmail   String   // Foreign key referencing User email
   websiteId   String   // Foreign key referencing Website id
   user        User     @relation(fields: [userEmail], references: [email], onDelete: Cascade) // Relation to User
